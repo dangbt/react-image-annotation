@@ -36,6 +36,7 @@ function Editor(props) {
           })
         }));
       },
+      onFocus: props.onFocus,
       onSubmit: props.onSubmit,
       value: props.annotation.data && props.annotation.data.text
     })

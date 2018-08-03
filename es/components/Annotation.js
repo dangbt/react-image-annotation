@@ -195,7 +195,8 @@ export default compose(isMouseHovering(), withRelativeMousePos())((_temp2 = _cla
       !props.disableEditor && props.value && props.value.selection && props.value.selection.showEditor && renderEditor({
         annotation: props.value,
         onChange: props.onChange,
-        onSubmit: this.onSubmit
+        onSubmit: this.onSubmit,
+        onFocus: props.onFocus,
       })
     );
   };
@@ -237,6 +238,7 @@ export default compose(isMouseHovering(), withRelativeMousePos())((_temp2 = _cla
   renderSelector: T.func,
   disableEditor: T.bool,
   renderEditor: T.func,
+  onFocus: T.bool,
 
   renderHighlight: T.func.isRequired,
   renderContent: T.func.isRequired,
