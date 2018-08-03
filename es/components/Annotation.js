@@ -1,7 +1,7 @@
 var _class, _temp2;
 
-var _templateObject = _taggedTemplateLiteralLoose(['\n  clear: both;\n  position: relative;\n  width: 100%;\n  &:hover ', ' {\n    opacity: 1;\n  }\n'], ['\n  clear: both;\n  position: relative;\n  width: 100%;\n  &:hover ', ' {\n    opacity: 1;\n  }\n']),
-    _templateObject2 = _taggedTemplateLiteralLoose(['\n  display: block;\n  width: 100%;\n'], ['\n  display: block;\n  width: 100%;\n']),
+var _templateObject = _taggedTemplateLiteralLoose(['\n  clear: both;\n  position: relative;\n  width: 100%;\n height: 100%;\n  &:hover ', ' {\n    opacity: 1;\n  }\n'], ['\n  clear: both;\n  position: relative;\n  width: 100%;\n height: 100%;\n  &:hover ', ' {\n    opacity: 1;\n  }\n']),
+    _templateObject2 = _taggedTemplateLiteralLoose(['\n  display: block;\n  width: 100%;\n height: 100%;\n'], ['\n  display: block;\n  width: 100%;\n height: 100%;\n']),
     _templateObject3 = _taggedTemplateLiteralLoose(['\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n'], ['\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n']);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26,8 +26,10 @@ var Container = styled.div(_templateObject, Overlay);
 
 var Img = styled.div`
   background-image: ${props => props.src || ""};
-  width: ${props => props.width || "100%"};
-  height: ${props => props.height || "100%"};
+  width: 100%;
+  height: 100%;
+  width: ${props => props.width };
+  height: ${props => props.height };
 
 `;
 
