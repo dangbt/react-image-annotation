@@ -51,7 +51,6 @@ export default {
       annotation: annotation,
       onChange: onChange,
       onSubmit: onSubmit,
-      onFocus: onFocus
     });
   },
   renderHighlight: function renderHighlight(_ref3) {

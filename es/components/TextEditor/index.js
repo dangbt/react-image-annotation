@@ -19,7 +19,6 @@ function TextEditor(props) {
       null,
       React.createElement('textarea', {
         placeholder: 'Write description',
-        onFocus: props.onFocus,
         onBlur: props.onBlur,
         onChange: props.onChange,
         value: props.value,

@@ -196,7 +196,6 @@ export default compose(isMouseHovering(), withRelativeMousePos())((_temp2 = _cla
         annotation: props.value,
         onChange: props.onChange,
         onSubmit: this.onSubmit,
-        onFocus: props.onFocus,
       })
     );
   };
@@ -238,7 +237,6 @@ export default compose(isMouseHovering(), withRelativeMousePos())((_temp2 = _cla
   renderSelector: T.func,
   disableEditor: T.bool,
   renderEditor: T.func,
-  onFocus: T.bool,
 
   renderHighlight: T.func.isRequired,
   renderContent: T.func.isRequired,
