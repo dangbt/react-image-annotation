@@ -24,7 +24,9 @@ import Overlay from './Overlay';
 
 var Container = styled.div(_templateObject, Overlay);
 
-var Img = styled.img(_templateObject2);
+var Img = styled.div`
+  background-image: ${props => props.src || ""};
+`;
 
 var Items = styled.div(_templateObject3);
 
