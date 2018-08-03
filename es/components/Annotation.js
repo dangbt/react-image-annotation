@@ -26,6 +26,9 @@ var Container = styled.div(_templateObject, Overlay);
 
 var Img = styled.div`
   background-image: ${props => props.src || ""};
+  width: ${props => props.width || "100%"};
+  height: ${props => props.height || "100%"};
+
 `;
 
 var Items = styled.div(_templateObject3);
