@@ -22,7 +22,8 @@ function TextEditor(props) {
         onFocus: props.onFocus,
         onBlur: props.onBlur,
         onChange: props.onChange,
-        value: props.value
+        value: props.value,
+        autoFocus: true,
       })
     ),
     props.value && React.createElement(
