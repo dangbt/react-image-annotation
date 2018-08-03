@@ -153,6 +153,8 @@ export default compose(isMouseHovering(), withRelativeMousePos())((_temp2 = _cla
       React.createElement(Img, {
         className: props.className,
         style: props.style,
+        width: props.width,
+        height: props.height,
         alt: props.alt,
         src: props.src,
         draggable: false,
